@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria do Bairro - Pedidos</title>
+</head>
+
+<body>
+
+    <section>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        <br><br>
+
+        <label for="telefone">Telefone: </label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(16) 99728-6137" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" required>
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+        <br><br>
+
+
+        <input type="checkbox" id="entrega" name="entrega" value="sim">
+        <label for="entrega"> SIM - Quero receber entrega</label>
+        <br>
+
+        <label for="endereco">Endereço: </label>
+        <input type="text" id="endereco" name="endereco" placeholder="Endereço de entrega">
+    </section>
+    <br><br>
+
+    <section>
+        <p>Detalhes do pedido</p>
+        <input type="radio" name="pedido" required>
+        <label for="bolo">Bolo</label>
+        <input type="radio" name="pedido" required>
+        <label for="paes">Pães</label>
+        <br><br>
+
+        <label for="sabor">Sabor/Recheio</label>
+        <br><br>
+        <select id="sabor" name="sabor" required>
+            <option value="">--Escolha--</option>
+            <option value="">Chocolate</option>
+            <option value="">Presunto</option>
+            <option value="">Mussarela</option>
+            <option value="">Presunto e Mussarela</option>
+        </select>
+        <br><br>
+
+        <p>Tamanho do pedido</p>
+        <input type="radio" name="tamanho" id="tamanho" required>
+        <label for="pequeno">Pequeno</label>
+
+        <input type="radio" id="tamanho" name="tamnho" required>
+        <label for="medio">Médio</label>
+
+        <input type="radio" name="tamanho" id="tamanho" required>
+        <label for="grande">Grande</label>
+        <br><br>
+
+        <label for="data">Agendamento do pedido: </label>
+        <input type="date" id="data" name="data">
+
+    </section>
+    <br><br>
+
+    <section>
+        <textarea name="mensagem" id="mensagem">Alguma observação?</textarea>
+    </section>
+</body>
+
+</html>

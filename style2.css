@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif; /* define a fonte que queremos usar */
+    background-color: #f0f0f0; /* define a cor de fundo da nossa pagina */
+    text-align: center; /*centraliza o nosso texto no meio da pag*/
+    padding: 20px; /*adiciona um espaçamento interno na nossa pag */
+}
+
+h1 {
+    color: darkblue; /*define a cor do titulo */
+    background-color: lightblue; /* define o fundo do nosso titulo */
+    padding: 15px; /* espaço interno entre o texto e a borda */
+    border-radius: 10px; /*deixar as bordas mais arredondas */
+    border: 2px solid #ccc; /* cria uma borda entre o fundo e o texto */
+}
+
+p {
+    color: black;
+    font-size: 20px; /* aumenta tamanho da fonte */
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+} 
+
+form {
+    background-color: white; /*deixa o fundo do form branco */
+    padding: 30px;
+    border-radius: 13px;
+    border: 2px solid #ccc;
+    display:inline-block; /* faz com que o form se ajuste ao tamanho do conteudo */
+    text-align: left; /*alinha o conteudo do form a esquerda */
+}
+
+input, textarea {
+    width: 100%; /*ocupa toda largura disp dentro do form */
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    background-color: darkblue; 
+    padding: 12px;
+    color: white;
+    border: none; /*tirar borda do botao */
+    border-radius: 8px;
+    cursor: pointer; /*quando passa a seta do mouse ele vira uma mao */
+}
+
+button:hover {
+    background-color: green; /*toda vez que passa o mouse no botao, ele muda de cor */
+}

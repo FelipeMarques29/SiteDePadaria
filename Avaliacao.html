@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria do Bairro - Feedback</title>
+  <link rel="stylesheet" href="css/Avaliacao.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Feedback</h1>
+    <p>Nos ajude a melhorar nossos produtos e serviços!</p>
+
+    <form>
+      <div class="campo">
+        <label for="nome">Nome (opcional):</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+      </div>
+
+      <div class="campo">
+        <label for="produto">Produto/Serviço:</label>
+        <select name="produto" id="produto" required>
+          <option value="">--Selecione--</option>
+          <option value="paes">Pães</option>
+          <option value="doces">Doces</option>
+          <option value="salgados">Salgados</option>
+          <option value="atendimento">Atendimento</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <p>Avaliação:</p>
+        <label>
+          <input type="radio" name="avaliacao" value="excelente" required> Excelente
+        </label>
+        <label>
+          <input type="radio" name="avaliacao" value="bom" required> Bom
+        </label>
+        <label>
+          <input type="radio" name="avaliacao" value="ruim" required> Ruim
+        </label>
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Comentários (opcional):</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe sua opinião aqui..."></textarea>
+      </div>
+
+      <button type="submit">Enviar Feedback</button>
+    </form>
+  </main>
+</body>
+
+</html>

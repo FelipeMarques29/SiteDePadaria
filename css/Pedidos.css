@@ -5,32 +5,44 @@
   box-sizing: border-box;
 }
 
-/* Fundo e centralização */
+/* Fundo e fonte */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f1e7; /* cor suave estilo padaria */
+  background-color: #f8f1e7; /* bege suave */
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
-  padding: 40px 15px;
+  padding: 30px 15px;
+  color: #333;
 }
 
-/* Container do formulário */
+/* Container */
 .container {
-  background: white;
-  padding: 30px;
-  max-width: 500px;
-  width: 100%;
+  background: #fff;
+  padding: 25px;
   border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Título */
-.container h1 {
+/* Título principal */
+h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #a0522d; /* marrom pão */
+  color: #a0522d;
+}
+
+/* Seções */
+section {
+  margin-bottom: 20px;
+}
+
+/* Subtítulos */
+.titulo-sec {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #444;
 }
 
 /* Labels */
@@ -41,21 +53,46 @@ label {
   color: #444;
 }
 
-/* Inputs, Select e Textarea */
-input, select, textarea {
+/* Inputs, selects e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 14px;
   transition: 0.3s;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border-color: #a0522d;
   outline: none;
   box-shadow: 0 0 6px rgba(160,82,45,0.3);
+}
+
+/* Radios e checkboxes */
+.radio-group, .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.radio-group input, 
+.checkbox input {
+  margin: 0;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
 }
 
 /* Botão */

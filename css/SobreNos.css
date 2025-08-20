@@ -1,0 +1,42 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo e fonte */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f1e7;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container central */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Seção Sobre Nós */
+.sobre-nos h1 {
+  text-align: center;
+  color: #a0522d;
+  margin-bottom: 20px;
+}
+
+.sobre-nos p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Destaques em negrito */
+.sobre-nos strong {
+  color: #8b4513;
+}

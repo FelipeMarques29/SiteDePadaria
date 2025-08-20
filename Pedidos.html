@@ -2,77 +2,84 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padaria do Bairro - Pedidos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria do Bairro - Pedidos</title>
+  <link rel="stylesheet" href="css/pedidos.css">
 </head>
 
 <body>
+  <main class="container">
+    <h1>Faça seu Pedido</h1>
 
-    <section>
-        <label for="nome">Nome: </label>
+    <form>
+      <!-- Dados do cliente -->
+      <section>
+        <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-        <br><br>
 
-        <label for="telefone">Telefone: </label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(16) 99728-6137" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" required>
-        <br><br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(16) 99728-6137"
+          pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" required>
 
-        <label for="email">Email: </label>
-        <input type="text" id="email" name="email" placeholder="Digite seu email" required>
-        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
+        <div class="checkbox">
+          <input type="checkbox" id="entrega" name="entrega" value="sim">
+          <label for="entrega">Quero receber entrega</label>
+        </div>
 
-        <input type="checkbox" id="entrega" name="entrega" value="sim">
-        <label for="entrega"> SIM - Quero receber entrega</label>
-        <br>
-
-        <label for="endereco">Endereço: </label>
+        <label for="endereco">Endereço</label>
         <input type="text" id="endereco" name="endereco" placeholder="Endereço de entrega">
-    </section>
-    <br><br>
+      </section>
 
-    <section>
-        <p>Detalhes do pedido</p>
-        <input type="radio" name="pedido" required>
-        <label for="bolo">Bolo</label>
-        <input type="radio" name="pedido" required>
-        <label for="paes">Pães</label>
-        <br><br>
+      <!-- Pedido -->
+      <section>
+        <p class="titulo-sec">Detalhes do Pedido</p>
 
-        <label for="sabor">Sabor/Recheio</label>
-        <br><br>
+        <div class="radio-group">
+          <input type="radio" id="bolo" name="pedido" value="bolo" required>
+          <label for="bolo">Bolo</label>
+
+          <input type="radio" id="paes" name="pedido" value="paes" required>
+          <label for="paes">Pães</label>
+        </div>
+
+        <label for="sabor">Sabor / Recheio</label>
         <select id="sabor" name="sabor" required>
-            <option value="">--Escolha--</option>
-            <option value="">Chocolate</option>
-            <option value="">Presunto</option>
-            <option value="">Mussarela</option>
-            <option value="">Presunto e Mussarela</option>
+          <option value="">--Escolha--</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="presunto">Presunto</option>
+          <option value="mussarela">Mussarela</option>
+          <option value="presunto-mussarela">Presunto e Mussarela</option>
         </select>
-        <br><br>
 
-        <p>Tamanho do pedido</p>
-        <input type="radio" name="tamanho" id="tamanho" required>
-        <label for="pequeno">Pequeno</label>
+        <p class="titulo-sec">Tamanho do pedido</p>
+        <div class="radio-group">
+          <input type="radio" id="pequeno" name="tamanho" value="pequeno" required>
+          <label for="pequeno">Pequeno</label>
 
-        <input type="radio" id="tamanho" name="tamnho" required>
-        <label for="medio">Médio</label>
+          <input type="radio" id="medio" name="tamanho" value="medio" required>
+          <label for="medio">Médio</label>
 
-        <input type="radio" name="tamanho" id="tamanho" required>
-        <label for="grande">Grande</label>
-        <br><br>
+          <input type="radio" id="grande" name="tamanho" value="grande" required>
+          <label for="grande">Grande</label>
+        </div>
 
-        <label for="data">Agendamento do pedido: </label>
+        <label for="data">Agendamento do pedido</label>
         <input type="date" id="data" name="data">
+      </section>
 
-    </section>
-    <br><br>
+      <!-- Observações -->
+      <section>
+        <label for="mensagem">Observações</label>
+        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Alguma observação?"></textarea>
+      </section>
 
-    <section>
-        <textarea name="mensagem" id="mensagem">Alguma observação?</textarea>
-    </section>
-
-    <button>Enviar</button>
+      <button type="submit" class="botao">Enviar</button>
+    </form>
+  </main>
 </body>
 
 </html>

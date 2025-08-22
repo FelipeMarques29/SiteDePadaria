@@ -113,3 +113,8 @@ textarea {
   background-color: #8b4513;
   transform: scale(1.02);
 }
+
+.btn-zap img{
+  max-width: 100%;
+  height: 100px;
+}
